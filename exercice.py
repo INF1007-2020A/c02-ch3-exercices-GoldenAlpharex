@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 import math
 
-#def dissipated_power(voltage, resistance):
-#	# TODO: Calculer la puissance dissipée par la résistance.
-#	power = voltage**2 / resistance
-#	return power
+def dissipated_power(voltage, resistance):
+	# TODO: Calculer la puissance dissipée par la résistance.
+	power = voltage**2 / resistance
+	return power
 
 def orthogonal(v1, v2):
 	# TODO: Retourner vrai si les vecteurs sont orthogonaux, faux sinon.
@@ -51,7 +51,7 @@ def bills(value):
 	return (twenties, tens, fives, twos, ones)
 
 if __name__ == "__main__":
-#	print(dissipated_power(69, 420))
+	print(dissipated_power(69, 420))
 	print(orthogonal((1, 1), (-1, 1)))
 	print(average([1, 4, -2, 10]))
 	print(bills(137))
