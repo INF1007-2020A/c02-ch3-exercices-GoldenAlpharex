@@ -33,7 +33,8 @@ def average(values):
 		
 def bills(value):
 	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$ à remettre pour représenter la valeur.
-	twenties = tens = fives = twos = ones = 0
+	twenties = tens = fives = ones = 0
+	initial_value = value
 	while value != 0:
 		if value >= 20:
 			twenties += 1
@@ -48,7 +49,7 @@ def bills(value):
 			ones += 1
 			value -= 1
 
-	return (twenties, tens, fives, twos, ones)
+	return (f"En transformant {initial_value}$ en monnaie de la manière la plus efficace, on obtiendrait {twenties} billets de 20$, {tens} billets de 10$, {fives} billets de 5$ et {ones} pièces de 1$.")
 
 if __name__ == "__main__":
 	print(dissipated_power(69, 420))
