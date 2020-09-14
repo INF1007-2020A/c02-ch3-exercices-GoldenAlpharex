@@ -14,8 +14,8 @@ class TestExercice(unittest.TestCase):
 	def test_dissipated_power(self):
 		data = [(69, 420),
 		        (42, 9000)]
-		expected = [1_999_620,
-		            15_876_000]
+		expected = [11.335714285714285,
+		            0.196]
 		output = [dissipated_power(d[0], d[1]) for d in data]
 		self.assertEqual(
 			expected,
